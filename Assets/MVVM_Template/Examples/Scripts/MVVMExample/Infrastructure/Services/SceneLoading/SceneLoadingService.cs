@@ -25,7 +25,7 @@ namespace MVVMExample.Infrastructure.Services.SceneLoading
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
-        private async void OnSceneLoaded(Scene arg0, LoadSceneMode arg1) => 
+        private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1) => 
             sceneLoaded?.Invoke(arg0, arg1);
 
         private async void OnActiveSceneChanged(Scene arg0, Scene arg1)

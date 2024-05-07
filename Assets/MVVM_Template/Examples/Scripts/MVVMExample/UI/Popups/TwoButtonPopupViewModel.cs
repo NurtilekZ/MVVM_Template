@@ -7,7 +7,7 @@ namespace MVVMExample.UI.Popups
     public class TwoButtonPopupViewModel : BasePopupViewModel
     {
         private readonly Action _cancelAction;
-        public override string AssetPath => AssetPaths.OneButtonPopup;
+        public override string AssetPath => AssetPaths.TwoButtonPopup;
 
         public TwoButtonPopupViewModel(string titleText, Action confirmAction, Action cancelAction = null) : base(titleText, confirmAction)
         {
