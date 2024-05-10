@@ -28,7 +28,6 @@ namespace MVVMExample.Infrastructure.Services.UI
             {
                 if (cachedView != null)
                 {
-                    Debug.Log(cachedView.GetType().Name);
                     cachedView.ShowAndBind(viewModel);
                     return cachedView;
                 }
